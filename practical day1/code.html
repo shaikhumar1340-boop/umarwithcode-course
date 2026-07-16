@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    background:linear-gradient(135deg,#2563eb,#7c3aed);
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:3.5rem;
+    margin-bottom:20px;
+    line-height:1.2;
+}
+
+.hero p{
+    font-size:1.2rem;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#fff;
+    color:#2563eb;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:50px;
+    transition:0.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* Tablet */
+@media(max-width:768px){
+    .hero h1{
+        font-size:2.5rem;
+    }
+
+    .hero p{
+        font-size:1rem;
+    }
+}
+
+/* Mobile */
+@media(max-width:480px){
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .hero p{
+        font-size:0.95rem;
+    }
+
+    .btn{
+        padding:12px 25px;
+    }
+}
+</style>
+<body>
+    <section class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Learn & Code Your Future</h1>
+
+        <p>
+            Start your coding journey today. Learn modern web development,
+            create beautiful designs, build real-world projects, and turn
+            your passion into a successful career.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#" class="btn">Apply Now</a>
+        </div>
+    </div>
+</section>
+</body>
+</html>
